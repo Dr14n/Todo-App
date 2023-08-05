@@ -1,0 +1,72 @@
+/* @import './base.css'; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main_body{
+  @apply font-sans antialiased bg-zinc-900;
+}
+
+#app{
+  @apply h-screen w-full flex justify-center;
+}
+
+.main_div{
+  @apply flex flex-col justify-center w-[500px] text-lg;
+}
+
+.main_grid{
+  @apply grid grid-cols-12 gap-x-3;
+}
+.main_button{
+  @apply h-[45px] w-full bg-blue-300 text-black rounded-sm hover:bg-blue-400 focus:ring-2 focus:outline-none focus:ring-blue-200;
+}
+
+.main_display{
+  @apply mt-4 border border-white rounded-md text-white p-2 max-h-[350px] overflow-auto;
+}
+
+.main_input{
+  @apply h-[45px] px-2 pl-3 text-lg rounded-sm;
+}
+
+.main_label{
+  @apply text-white mb-4 font-bold text-4xl;
+}
+
+.line{
+  @apply border-t border-r border-b border-l border-solid;
+}
+/* #app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */
