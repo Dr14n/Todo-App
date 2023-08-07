@@ -67,7 +67,7 @@ export default {
                 this.items.push(
                     {
                         name: this.new_item,
-                        id: this.items.length + 1,
+                        id: this.items.length ? this.items[this.items.length - 1].id + 1 : 1,
                         date: dateTime
                     }
                 );
